@@ -1,3 +1,5 @@
+![banner](Screenshot 2025-01-12 004347.png)
+
 # Welcome to Git and GitHub at ChaiCode Cohort!
 
 This documentation will guide new developers joining the ChaiCode Cohort through using Git and GitHub effectively. Git is a vital version control tool, and GitHub provides a collaborative platform for managing code. Mastering these tools will ensure smooth collaboration and efficient version control for all projects.
