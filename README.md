@@ -1,4 +1,4 @@
-![banner](Screenshot 2025-01-12 004347.png)
+![banner](https://github.com/maurya-kavi/Git-and-GitHub-at-ChaiCode-Cohort-/blob/main/screenshort/Screenshot%202025-01-12%20004347.png)
 
 # Welcome to Git and GitHub at ChaiCode Cohort!
 
