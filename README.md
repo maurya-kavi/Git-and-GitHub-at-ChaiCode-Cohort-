@@ -6,7 +6,7 @@ This documentation will guide new developers joining the ChaiCode Cohort through
 
 ---
 
-![Git & Github](https://cdn.hashnode.com/res/hashnode/image/upload/v1736603474484/3f5e6b20-9e04-4606-87f3-8557c0b7d0a8.png?auto=compress,format&format=webp)
+![Git & Github](https://facialix.com/wp-content/uploads/2023/05/curso-git-y-github-facialix.jpg)
 
 ## Table of Contents
 1. [What is Git?](#what-is-git)
