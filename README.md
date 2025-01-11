@@ -49,11 +49,11 @@ GitHub is a web-based platform for hosting Git repositories. It provides collabo
    ```bash
    git --version
    ```
-![Git Installation](https://cdn.hashnode.com/res/hashnode/image/upload/v1736507024393/ad7e0ac6-7ccb-4716-ba84-9ed586084dd2.png?auto=compress,format&format=webp)
+![Git Installation](https://github.com/maurya-kavi/Git-and-GitHub-at-ChaiCode-Cohort-/blob/main/screenshort/Screenshot%202025-01-12%20012639.png)
 
-![git1](https://cdn.hashnode.com/res/hashnode/image/upload/v1736509626957/b4ff245d-2fe8-4094-92d8-df101d480feb.png?auto=compress,format&format=webp)
+![git1](https://github.com/maurya-kavi/Git-and-GitHub-at-ChaiCode-Cohort-/blob/main/screenshort/Screenshot%202025-01-12%20012652.png)
 
-![git2](https://cdn.hashnode.com/res/hashnode/image/upload/v1736510452564/34cdfcdb-51ec-4347-8bb4-09bf063038e6.png?auto=compress,format&format=webp)
+![git2](https://github.com/maurya-kavi/Git-and-GitHub-at-ChaiCode-Cohort-/blob/main/screenshort/Screenshot%202025-01-12%20012916.png)
 
 ### macOS
 1. Use Homebrew:
