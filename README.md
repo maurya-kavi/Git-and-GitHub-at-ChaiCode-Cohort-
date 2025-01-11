@@ -66,7 +66,9 @@ GitHub is a web-based platform for hosting Git repositories. It provides collabo
    git --version
    ```
 
-![Git Installation](https://user-images-example-link.com/installation-screenshot)
+![Git Installation](https://cdn.hashnode.com/res/hashnode/image/upload/v1736603474484/3f5e6b20-9e04-4606-87f3-8557c0b7d0a8.png?auto=compress,format&format=webp)
+
+
 
 ---
 
