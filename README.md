@@ -1,187 +1,167 @@
-Complete Guide to Git and GitHub
+# Welcome to Git and GitHub at ChaiCode Cohort!
 
-Welcome to the ultimate guide for understanding and using Git and GitHub, from the basics to more advanced features.
+This documentation will guide new developers joining the ChaiCode Cohort through using Git and GitHub effectively. Git is a vital version control tool, and GitHub provides a collaborative platform for managing code. Mastering these tools will ensure smooth collaboration and efficient version control for all projects.
 
-Table of Contents
+---
 
-What is Git?
+## Table of Contents
+1. [What is Git?](#what-is-git)
+2. [Why Use Git?](#why-use-git)
+3. [What is GitHub?](#what-is-github)
+4. [Installing Git](#installing-git)
+5. [Configuring Git](#configuring-git)
+6. [Cloning the ChaiCode Repository](#cloning-the-chaicode-repository)
+7. [Basic Git Commands](#basic-git-commands)
+8. [Commit Message Rules](#commit-message-rules)
+9. [Branching Workflow](#branching-workflow)
+10. [Pull Requests (PR)](#pull-requests-pr)
+11. [Common Git Errors and Fixes](#common-git-errors-and-fixes)
 
-Why Use Git?
+---
 
-What is GitHub?
-
-Installing Git
-
-Basic Git Commands
-
-Working with GitHub
-
-Branching and Merging
-
-Using GitHub Issues and Pull Requests
-
-Common Git Errors and Fixes
-
-1. What is Git?
-
+## 1. What is Git?
 Git is a distributed version control system that allows multiple people to work on a project simultaneously without overwriting each other’s changes. It tracks changes in files and coordinates work among multiple developers.
 
-2. Why Use Git?
+---
 
-Collaboration: Work on the same project with others.
+## 2. Why Use Git?
+- **Collaboration**: Work on the same project with others.
+- **Version History**: Track changes over time.
+- **Branching and Merging**: Develop features independently.
 
-Version History: Track changes over time.
+---
 
-Branching and Merging: Develop features independently.
-
-3. What is GitHub?
-
+## 3. What is GitHub?
 GitHub is a web-based platform for hosting Git repositories. It provides collaboration features like pull requests, code reviews, and issue tracking.
 
-4. Installing Git
+---
 
-Windows
+## 4. Installing Git
 
-Download the Git installer from Git Official Website.
+### Windows
+1. Download the Git installer from [Git Official Website](https://git-scm.com/).
+2. Run the installer and follow the steps.
+3. Verify installation: Open **Command Prompt** and run:
+   ```bash
+   git --version
+   ```
 
-Run the installer and follow the steps.
+### macOS
+1. Use Homebrew:
+   ```bash
+   brew install git
+   ```
+2. Verify installation:
+   ```bash
+   git --version
+   ```
 
-Verify installation: Open Command Prompt and run:
+### Linux
+1. Use the package manager:
+   ```bash
+   sudo apt-get install git
+   ```
+2. Verify installation:
+   ```bash
+   git --version
+   ```
 
-git --version
+![Git Installation](https://user-images-example-link.com/installation-screenshot)
 
-macOS
+---
 
-Use Homebrew:
+## 5. Configuring Git
+Set up your username and email for Git:
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
 
-brew install git
+---
 
-Verify installation:
+## 6. Cloning the ChaiCode Repository
+To clone a repository:
+```bash
+git clone https://github.com/ChaiCode/example-repo.git
+```
+Navigate into the cloned repository:
+```bash
+cd example-repo
+```
 
-git --version
+---
 
-Linux
+## 7. Basic Git Commands
+| Command | Description |
+|---------|-------------|
+| `git init` | Initialize a new repository |
+| `git status` | Check the status of changes |
+| `git add <file>` | Stage changes |
+| `git commit -m "message"` | Commit staged changes |
+| `git push origin <branch>` | Push changes to remote |
+| `git pull` | Fetch and merge changes from remote |
+| `git log` | View commit history |
 
-Use the package manager:
+---
 
-sudo apt-get install git
+## 8. Commit Message Rules
+- Use the present tense ("Add feature" not "Added feature").
+- Capitalize the first letter.
+- Keep the message short (50 characters or less).
+- Use prefixes like `fix:`, `feat:`, `chore:`, `docs:` for categorization.
 
-Verify installation:
+Examples:
+```bash
+feat: Add tea selection feature
+fix: Resolve login issue for tea enthusiasts
+docs: Update README with chai varieties
+```
 
-git --version
+---
 
+## 9. Branching Workflow
+### Branching Strategy
+- **main**: Stable production-ready code.
+- **development**: Active development.
+- **feature/branch-name**: Individual features.
 
-
-5. Basic Git Commands
-
-Command
-
-Description
-
-git init
-
-Initialize a new repository
-
-git clone <repo_url>
-
-Clone a repository
-
-git status
-
-Check the status of changes
-
-git add <file>
-
-Stage changes
-
-git commit -m "message"
-
-Commit staged changes
-
-git push origin <branch>
-
-Push changes to remote
-
-git pull
-
-Fetch and merge changes from remote
-
-6. Working with GitHub
-
-Creating a Repository
-
-Sign in to GitHub.
-
-Click New under Repositories.
-
-Enter repository name, description, and visibility.
-
-Click Create repository.
-
-Connecting Local Repository to GitHub
-
-git remote add origin https://github.com/username/repository.git
-
-Pushing to GitHub
-
-git push -u origin main
-
-
-
-7. Branching and Merging
-
-Create a Branch
-
-git branch feature-branch
-
-Switch to Branch
-
-git checkout feature-branch
-
-Merge Branch
-
+### Create a Branch
+```bash
+git branch feature/tea-menu
+```
+### Switch to Branch
+```bash
+git checkout feature/tea-menu
+```
+### Merge Branch
+```bash
 git checkout main
-git merge feature-branch
+git merge feature/tea-menu
+```
 
-8. Using GitHub Issues and Pull Requests
+---
 
-Creating an Issue
+## 10. Pull Requests (PR)
+1. Push your branch to GitHub.
+2. Click **Compare & pull request**.
+3. Add details and create the pull request.
 
-Go to the repository.
+![GitHub Pull Request](https://user-images-example-link.com/pull-request-screenshot)
 
-Click Issues > New Issue.
+### Writing PR Descriptions
+- Provide a summary of changes.
+- Mention any issues fixed.
+- Request reviews from relevant team members.
 
-Fill in the title and description.
+---
 
-Creating a Pull Request
+## 11. Common Git Errors and Fixes
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `fatal: not a git repository` | Not in a Git repository | Navigate to the correct directory or initialize with `git init`. |
+| `merge conflict` | Conflicting changes | Edit conflicting files and run `git commit`. |
 
-Push a branch to GitHub.
-
-Click Compare & pull request.
-
-Add details and create the pull request.
-
-
-
-9. Common Git Errors and Fixes
-
-Error
-
-Cause
-
-Solution
-
-fatal: not a git repository
-
-Not in a Git repository
-
-Navigate to the correct directory or initialize with git init.
-
-merge conflict
-
-Conflicting changes
-
-Edit conflicting files and run git commit.
+---
 
 Happy coding with Git and GitHub!
 
